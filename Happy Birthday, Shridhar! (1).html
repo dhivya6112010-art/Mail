@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Shridhar!</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4ecff;--card:#ffffff;--ink:#2b1b4a;--soft:#6b5a8a;--pink:#ff6fae;--sun:#ffd166;--mint:#6fe0c0;--line:#e3d6fa;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1230;--card:#2a1f4a;--ink:#fbf4ff;--soft:#c3b4e6;--line:#4a3a78;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1230;--card:#2a1f4a;--ink:#fbf4ff;--soft:#c3b4e6;--line:#4a3a78;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:'Fredoka',system-ui,sans-serif;text-align:center;overflow-x:hidden}
+main{max-width:520px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:clamp(2rem,9vw,3rem);margin:8px 0 4px;line-height:1.1;font-weight:700}
+.sub{color:var(--soft);margin:0 0 24px}
+section{display:none}
+section.on{display:block;animation:pop .45s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(14px)}to{opacity:1;transform:none}}
+button{font:inherit;font-weight:600;border:0;border-radius:999px;padding:13px 26px;background:var(--pink);color:#fff;cursor:pointer;box-shadow:0 4px 0 #c94a85;transition:transform .1s}
+button:active{transform:translateY(3px);box-shadow:0 1px 0 #c94a85}
+button:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+button.alt{background:var(--sun);color:#2b1b4a;box-shadow:0 4px 0 #d4a63a}
+/* envelope */
+.env{position:relative;width:260px;height:170px;margin:30px auto 26px;cursor:pointer;background:none;box-shadow:none;padding:0;border-radius:0;display:block}
+.env .body{position:absolute;inset:0;background:var(--pink);border-radius:14px;box-shadow:0 10px 0 #c94a85}
+.env .flap{position:absolute;left:0;right:0;top:0;height:100px;background:#ff8fc0;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .6s;z-index:3;border-radius:14px 14px 0 0}
+.env .seal{position:absolute;left:50%;top:78px;transform:translateX(-50%);font-size:34px;z-index:4;transition:opacity .3s;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:translateX(-50%) scale(1.2)}}
+.env.open .flap{transform:rotateX(180deg);z-index:1}
+.env.open .seal{opacity:0}
+.env .paper{position:absolute;left:14px;right:14px;top:14px;bottom:14px;background:#fff9e6;border-radius:8px;z-index:2;transition:transform .7s .3s;display:flex;align-items:center;justify-content:center;font-family:'Caveat',cursive;font-size:26px;color:#2b1b4a}
+.env.open .paper{transform:translateY(-70px)}
+/* letter */
+.letter{background:var(--card);border:2px dashed var(--line);border-radius:22px;padding:24px 22px;text-align:left;font-family:'Caveat',cursive;font-size:1.5rem;line-height:1.45;margin-bottom:22px}
+.letter p{margin:0 0 .8em}
+.sign{text-align:right;font-weight:700;font-size:1.8rem}
+.line{opacity:0;transform:translateY(8px);transition:all .6s}
+.line.show{opacity:1;transform:none}
+/* wrapped stories */
+.story{border-radius:26px;padding:34px 22px;min-height:290px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#2b1b4a;cursor:pointer;user-select:none}
+.story h2{margin:0 0 10px;font-size:1.5rem}
+.story .big{font-size:clamp(2.6rem,14vw,4rem);font-weight:700;line-height:1;margin:6px 0}
+.story p{margin:6px 0;font-size:1.1rem}
+.dots{display:flex;gap:6px;justify-content:center;margin:14px 0}
+.dots i{width:28px;height:5px;border-radius:9px;background:var(--line)}
+.dots i.on{background:var(--pink)}
+.hint{color:var(--soft);font-size:.9rem}
+/* cake */
+.cake{position:relative;width:200px;margin:20px auto 10px;cursor:pointer;background:none;box-shadow:none;padding:0;display:block;border-radius:0}
+.candles{display:flex;justify-content:center;gap:22px;height:56px;align-items:flex-end}
+.candle{width:12px;height:34px;background:var(--mint);border-radius:4px;position:relative}
+.candle::before{content:'';position:absolute;left:50%;top:-18px;width:12px;height:18px;margin-left:-6px;background:radial-gradient(circle at 50% 70%,#fff 10%,var(--sun) 40%,#ff9a3c 80%);border-radius:50% 50% 50% 50%/65% 65% 35% 35%;animation:fl .4s infinite alternate;transform-origin:bottom}
+@keyframes fl{to{transform:scaleY(1.2) rotate(4deg)}}
+.out .candle::before{display:none}
+.tier1{height:46px;background:var(--pink);border-radius:12px 12px 0 0}
+.tier2{height:56px;background:#ffb3d4;border-radius:0 0 14px 14px;border-top:6px dotted #fff}
+.wish{min-height:3em;font-family:'Caveat',cursive;font-size:1.7rem;margin:12px 0}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+<main>
+
+<section id="s0" class="on">
+  <h1>You’ve got mail, Shridhar! 💌</h1>
+  <p class="sub">Something cute is waiting for you</p>
+  <button class="env" id="env" aria-label="Open the envelope">
+    <div class="body"></div><div class="paper">for Shridhar</div><div class="flap"></div><div class="seal">💖</div>
+  </button>
+  <p class="hint">Tap the envelope</p>
+</section>
+
+<section id="s1">
+  <h1>Happy Birthday! 🎉</h1>
+  <p class="sub">A little letter, just for you</p>
+  <div class="letter" id="letter">
+    <p class="line">Dear Shridhar,</p>
+    <p class="line">Happy Birthday! Another trip around the sun, and you’re still the kind of friend everyone wishes they had. The one who shows up, laughs at the right moments, and makes ordinary days feel like the good part of a movie.</p>
+    <p class="line">Thank you for the random chats, the support when I needed it, and for being so effortlessly you. Please never lose that main character energy. 🌟</p>
+    <p class="line">I hope this year brings you big wins, small joys, great food and zero Monday blues. You deserve every bit of it.</p>
+    <p class="line sign">With lots of love,<br>Dhivya 💛</p>
+  </div>
+  <button id="to2">Next: your Birthday Wrapped ✨</button>
+</section>
+
+<section id="s2">
+  <h1>Shridhar Wrapped</h1>
+  <p class="sub">Tap the card to flip through</p>
+  <div class="story" id="story" role="button" tabindex="0" aria-label="Next card"></div>
+  <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+  <p class="hint">Tap to continue</p>
+</section>
+
+<section id="s3">
+  <h1>Make a wish 🎂</h1>
+  <p class="sub">Tap the candles to blow them out</p>
+  <button class="cake" id="cake" aria-label="Blow out the candles">
+    <div class="candles"><div class="candle"></div><div class="candle"></div><div class="candle"></div></div>
+    <div class="tier1"></div><div class="tier2"></div>
+  </button>
+  <div class="wish" id="wish"></div>
+  <button class="alt" id="again" style="display:none">Read it again 🔁</button>
+</section>
+
+</main>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function show(n){document.querySelectorAll('section').forEach(function(s){s.classList.remove('on')});$('s'+n).classList.add('on');window.scrollTo(0,0)}
+
+/* confetti */
+var cv=$('cv'),cx=cv.getContext('2d'),P=[],run=false;
+function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
+function boom(n){
+  var cols=['#ff6fae','#ffd166','#6fe0c0','#9b8cff','#ff9a3c'];
+  for(var i=0;i<n;i++)P.push({x:innerWidth/2,y:innerHeight/2.2,vx:(Math.random()-.5)*14,vy:-Math.random()*13-3,r:Math.random()*6+3,c:cols[i%5],a:Math.random()*6,life:140});
+  if(!run){run=true;loop()}
+}
+function loop(){
+  cx.clearRect(0,0,cv.width,cv.height);
+  P=P.filter(function(p){return p.life>0});
+  P.forEach(function(p){p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.a+=.2;p.life--;cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.globalAlpha=Math.min(1,p.life/40);cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()});
+  if(P.length)requestAnimationFrame(loop);else{run=false}
+}
+
+/* envelope */
+$('env').onclick=function(){
+  this.classList.add('open');boom(90);
+  setTimeout(function(){show(1);var L=document.querySelectorAll('.line');L.forEach(function(l,i){setTimeout(function(){l.classList.add('show')},400+i*900)})},1300);
+};
+$('to2').onclick=function(){show(2);draw()};
+
+/* wrapped */
+var cards=[
+ {bg:'#ffd166',h:'Your friend stats',big:'9,999+',p:'laughs caused this year',q:'Dhivya’s official count 😂'},
+ {bg:'#6fe0c0',h:'Top vibe',big:'Immaculate',p:'Certified green flag ✅',q:'Main character energy: 100%'},
+ {bg:'#ff9bc7',h:'Best at',big:'Being there',p:'Always, no matter what',q:'Friend of the year (every year) 🏆'},
+ {bg:'#c9b8ff',h:'Birthday forecast',big:'100%',p:'chance of cake 🍰',q:'0% chance of Monday blues'}
+],ci=0;
+function draw(){
+  var c=cards[ci],s=$('story');
+  s.style.background=c.bg;
+  s.innerHTML='<h2>'+c.h+'</h2><div class="big">'+c.big+'</div><p>'+c.p+'</p><p>'+c.q+'</p>';
+  s.style.animation='none';void s.offsetWidth;s.style.animation='pop .35s';
+  document.querySelectorAll('#dots i').forEach(function(d,i){d.className=i<=ci?'on':''});
+}
+function next(){ci++;if(ci>=cards.length){ci=0;boom(60);show(3);return}draw()}
+$('story').onclick=next;
+$('story').onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();next()}};
+
+/* cake */
+var wishes=['May every wish come true 🌠','Here’s to the best year yet 🥳','Cake first, worries later 🍰','You’re officially a legend ✨'];
+$('cake').onclick=function(){
+  if($('cake').classList.contains('out'))return;
+  $('cake').classList.add('out');boom(160);
+  $('wish').textContent=wishes[Math.floor(Math.random()*wishes.length)]+' Happy Birthday, Shridhar!';
+  $('again').style.display='inline-block';
+};
+$('again').onclick=function(){
+  $('cake').classList.remove('out');$('wish').textContent='';this.style.display='none';
+  document.querySelectorAll('.line').forEach(function(l){l.classList.add('show')});show(1);
+};
+})();
+</script>
+</body>
+</html>
